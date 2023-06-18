@@ -1,0 +1,32 @@
+chrome/firefox/operamini/edge these all are browsers 
+
+these browsers can only run javascript directly can't run JSX
+
+what is JSX? 
+
+jsx is a HTML like syntax
+which helps us to write HTML in React 
+
+
+so Babel is a compiler which converts over JSX code to javascript 
+
+
+for all this browsers chrome/firefox/operamini/edge to run javascript at the backend there are their owm enginges for all 
+
+every browser has it's own engine to run the javascript
+
+for example most preferd browser is chrome 
+
+so the nam eof the engine for the chome is v8 engine 
+
+
+
+this v8 engine is build and developed by using c++ language 
+
+this engine takes our javascript code and convert it to c++ language and run the code 
+
+this is all the process how javascript runs in the browser.
+
+
+all browsers supports javascript as their backend/frontend developments 
+
