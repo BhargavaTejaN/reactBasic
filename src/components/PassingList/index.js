@@ -1,7 +1,7 @@
-import React from 'react'
+import React,{useState} from 'react'
 import EachItemInList from '../EachItemInList'
 
-const userDetailsList = [
+const initialUserDetailsList = [
     {
       uniqueNo: 1,
       imageUrl:
@@ -33,10 +33,28 @@ const userDetailsList = [
   ]
 
 const PassingList = () => {
+
+  const [inputValue,setInputValue] = useState("");
+  const [usersDetailsList,setUsersDetailsList] = useState(initialUserDetailsList);
+
+  const handleInput = (event) => {
+    setInputValue(event.target.value);
+  }
+
+  const searchResults = usersDetailsList.filter((each) => each.name.toLowerCase().includes(inputValue.toLowerCase()));
+
+  const deletePic = (id) => {
+    //console.log("Delete Pic With Id : ",id);
+    const filteredUsersData = usersDetailsList.filter((each) => each.uniqueNo !== id);
+    //console.log("Filtered Data : ",filteredUsersData)
+    setUsersDetailsList(filteredUsersData);
+  }
+
   return (
     <div>
-        {userDetailsList.map((each) => (
-            <EachItemInList details={each} key={each.uniqueNo} />
+      <input type="search" value={inputValue} onChange={handleInput} />
+        {searchResults.map((each) => (
+            <EachItemInList deletePic={deletePic} details={each} key={each.uniqueNo} />
         ))}
     </div>
   )
