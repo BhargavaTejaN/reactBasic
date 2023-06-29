@@ -1,0 +1,15 @@
+Component Life Cycle 
+
+
+Every React Component goes through three phases throughout its lifetime:
+
+Mounting Phase
+Updating Phase
+Unmounting phase
+
+In Functional components, there are no life cycle methods 
+
+to use life cycle methods in functionl components, react hooks provided us with a new Hook named as useEffects Hook 
+
+this useEffect Hook acts both as ComponentDidMount and ComponentWillUnmount 
+

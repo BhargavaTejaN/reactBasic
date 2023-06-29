@@ -1,0 +1,39 @@
+Component Life Cycle 
+
+NOTE : For evry chnage in the state, render method is called and render method updates the UI
+
+Every React Component goes through three phases throughout its lifetime:
+
+Mounting Phase
+Updating Phase
+Unmounting phase
+
+
+Mounting Phase 
+
+1) State Initialization (constructor)
+2) render which will return A JSX 
+3) ComponentDidMount() this is used to set timers/API calls initialy when the page is rendered 
+
+updating phase 
+
+1) render
+
+the data which is fetched in ComponentDidMount gets fetched 
+so the fetched data is either stored in the state/constructor 
+so as the state is updated render method needs to be called and New JSX will be returned
+so the ui will get updated 
+
+
+unmounting phase
+
+This phase, the timers what we set needs to be cleared,
+it's not manditory but most prefered to clear/umount the phase 
+we need to do it to increase the performance of the apllication and remove the warings during the deployment stage 
+
+For this there is a method : ComponentWillUnmount()
+using this we can unmount the pahse
+
+Not only these they are lot many life cycle methods,
+shouldComponentupdate,componentDidCatch etc all are used based on the required whcih we develop our application
+
