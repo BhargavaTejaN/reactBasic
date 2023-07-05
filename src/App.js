@@ -1,10 +1,10 @@
 import './App.css';
-import APIFETCHING from './components/APIFetching/APIFETCHING';
+import SearchBar from './components/AutoCompleteDropDown';
 
 function App() {
   return (
     <div className="App">
-      <APIFETCHING />
+      <SearchBar />
     </div>
   );
 }
