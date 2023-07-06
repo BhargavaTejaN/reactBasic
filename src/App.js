@@ -1,10 +1,10 @@
 import './App.css';
-import SearchBar from './components/AutoCompleteDropDown';
+import SearchParamsURL from './components/SearchParamsURL/SearchParamsURL';
 
 function App() {
   return (
     <div className="App">
-      <SearchBar />
+      <SearchParamsURL />
     </div>
   );
 }
