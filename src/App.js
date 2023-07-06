@@ -1,10 +1,10 @@
 import './App.css';
-import SearchParamsURL from './components/SearchParamsURL/SearchParamsURL';
+import ListBox from './components/HeadLessUI/ListBox/ListBox';
 
 function App() {
   return (
     <div className="App">
-      <SearchParamsURL />
+      <ListBox />
     </div>
   );
 }
