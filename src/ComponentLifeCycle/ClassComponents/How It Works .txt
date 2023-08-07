@@ -24,6 +24,9 @@ so the fetched data is either stored in the state/constructor
 so as the state is updated render method needs to be called and New JSX will be returned
 so the ui will get updated 
 
+2) component Did Update 
+
+
 
 unmounting phase
 
@@ -35,5 +38,5 @@ For this there is a method : ComponentWillUnmount()
 using this we can unmount the pahse
 
 Not only these they are lot many life cycle methods,
-shouldComponentupdate,componentDidCatch etc all are used based on the required whcih we develop our application
+shouldComponentupdate,componentDidCatch,componentDidUpdate etc all are used based on the required whcih we develop our application
 

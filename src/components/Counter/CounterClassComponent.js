@@ -3,11 +3,11 @@
 
 import React from 'react'
 
-class Counter extends React.Component {
+class CounterClassComponent extends React.Component {
 
   state = {
     count : 0,
-    name : ""
+    name : "Click The Button"
   }
 
   render() {
@@ -52,4 +52,4 @@ class Counter extends React.Component {
   }
 }
 
-export default Counter
+export default CounterClassComponent

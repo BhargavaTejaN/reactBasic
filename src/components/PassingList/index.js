@@ -30,7 +30,7 @@ const initialUserDetailsList = [
       name: 'Devon Lane',
       role: 'Software Developer'
     }
-  ]
+]
 
 const PassingList = () => {
 
@@ -49,6 +49,7 @@ const PassingList = () => {
     //console.log("Filtered Data : ",filteredUsersData)
     setUsersDetailsList(filteredUsersData);
   }
+
 
   return (
     <div>

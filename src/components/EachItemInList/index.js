@@ -5,6 +5,10 @@ const EachItemInList = (props) => {
     const {details,deletePic} = props;
     const {uniqueNo,imageUrl,name,role} = details;
 
+    // const onDeletePic = () => {
+    //   deletePic(uniqueNo);
+    // }
+
     const onDeletePic = () => {
       deletePic(uniqueNo);
     }
